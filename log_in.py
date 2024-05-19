@@ -27,7 +27,7 @@ class Login:
         # Window configurations
         self.root.title("Login - {}".format(self.hname)) # set the title
         self.root.geometry("500x300+530+220") # Set the window width, height and position
-        self.root.wm_iconbitmap("../images/hms_logo.ico") # Set the Icon
+        self.root.wm_iconbitmap("./images/hms_logo.ico") # Set the Icon
         self.root.resizable(FALSE,FALSE) # Block the resizable feature
 
         self.root.focus_force()
@@ -48,7 +48,7 @@ class Login:
         left_frame= Frame(self.root,background="white")
         left_frame.place(x=0,y=0,width=255,height=300)
 
-        self.left_img=Image.open("../images/doc_p2.png")
+        self.left_img=Image.open("./images/doc_p2.png")
         self.left_img=self.left_img.resize((210,200))
         self.left_img=ImageTk.PhotoImage(self.left_img)
         left_img_label=Label(self.root,image= self.left_img,background="white")

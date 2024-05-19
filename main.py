@@ -27,11 +27,11 @@ class HMS:
         # Window configurations
         self.root.title("Dashboard - {}".format(self.hname)) # set the title
         self.root.geometry("1350x700+100+70") # Set the window width, height and position
-        self.root.wm_iconbitmap("../images/hms_logo.ico") # Set the Icon
+        self.root.wm_iconbitmap("./images/hms_logo.ico") # Set the Icon
         self.root.resizable(FALSE,FALSE) # Block the resizable feature
 
         ### =============== Title Bar ===================
-        self.title_icon=Image.open("../images/hms_logo1.png")
+        self.title_icon=Image.open("./images/hms_logo1.png")
         self.title_icon=self.title_icon.resize((50,50))
         self.title_icon=ImageTk.PhotoImage(self.title_icon)
         title=Label(self.root,text=self.hname, image= self.title_icon,compound=LEFT,font=("arial black",20),bg="#2b2d42",fg="#edf2f4",padx=10)
@@ -68,7 +68,7 @@ class HMS:
         acc_btn.pack(fill=X,pady=10)
 
         # Place the Hospital's Logo , Image size 450x450
-        self.name_logo=Image.open("../images/hms_name_logo.png")
+        self.name_logo=Image.open("./images/hms_name_logo.png")
         self.name_logo=self.name_logo.resize((450,450))
         self.name_logo=ImageTk.PhotoImage(self.name_logo)
         lbl_name_logo=Label(left_frame,image=self.name_logo,bg="#e5e5e5")

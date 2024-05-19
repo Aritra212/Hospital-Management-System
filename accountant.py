@@ -20,9 +20,9 @@ class Acc:
         self.parent=parent
         
         # Window configurations
-        self.root.title("Administration - {}".format(self.hname)) # set the title
+        self.root.title("Accounts - {}".format(self.hname)) # set the title
         self.root.geometry("1250x650+150+100") # Set the window width, height and position
-        self.root.wm_iconbitmap("../images/hms_logo.ico") # Set the Icon
+        self.root.wm_iconbitmap("./images/hms_logo.ico") # Set the Icon
         self.root.resizable(FALSE,FALSE) # Block the resizable feature
         self.root.focus_force()
 
@@ -31,7 +31,7 @@ class Acc:
             self.root.protocol("WM_DELETE_WINDOW",self.onclosing)
 
         # =============== Title Bar ===================
-        self.title_icon=Image.open("D:\\educational\\python program\\Hospital_management_system\\images\\hms_logo1.png")
+        self.title_icon=Image.open("./images/hms_logo1.png")
         self.title_icon=self.title_icon.resize((50,50))
         self.title_icon=ImageTk.PhotoImage(self.title_icon)
         title=Label(self.root,text="Hospital Management System", image= self.title_icon,compound=LEFT,font=("arial black",20),bg="#2b2d42",fg="#edf2f4",padx=10)

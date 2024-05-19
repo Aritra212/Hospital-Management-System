@@ -28,7 +28,7 @@ class Create_Admin:
         # Window configurations
         self.root.title("Create Admin - {}".format(self.hname)) # set the title
         self.root.geometry("400x520+530+220") # Set the window width, height and position
-        self.root.wm_iconbitmap("../images/hms_logo.ico") # Set the Icon
+        self.root.wm_iconbitmap("./images/hms_logo.ico") # Set the Icon
         self.root.resizable(FALSE,FALSE) # Block the resizable feature
 
         self.root.focus_force()
